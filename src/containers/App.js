@@ -22,10 +22,8 @@ function App() {
         <Header clicked={controlModal} />
         <CardMenuList controlModal={controlModal} />{" "}
       </div>
-      )
-      <AdminPage
-        campus={["Busch", "CollegeAve", "Livingston", "Cook Douglas"]}
-      />
+      
+    
     </div>
   );
 }
