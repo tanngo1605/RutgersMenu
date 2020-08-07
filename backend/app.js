@@ -14,10 +14,10 @@ const userRouter = require('./router/userRouter');
 
   
 app.use(cors(corsOptions));
-app.use((req, res, next) =>{
+/*app.use((req, res, next) =>{
     console.log(req.headers.cookie);
     next();
-})
+})*/
 app.use(express.json());
 app.use('/user', userRouter)
 app.use('/food', foodRouter);
@@ -25,7 +25,12 @@ app.use('/food', foodRouter);
 
 app.get('/', (req, res) =>{
     res.end('Hello World');
-    console.log(req.body.name)
+    console.log(req.body)
+    
+})
+app.post('/', (req, res) =>{
+    res.end('Hello World');
+    console.log(req.body)
     
 })
 
